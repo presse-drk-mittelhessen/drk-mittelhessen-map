@@ -1,0 +1,14 @@
+:root { --maxw: 980px; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.4 system-ui, Arial, sans-serif; }
+.container { max-width: var(--maxw); margin: 1rem auto; padding: 0 1rem; }
+.controls { display: grid; gap: .75rem; margin-bottom: .5rem; }
+.buttons { display: flex; gap: .5rem; }
+.buttons button { padding: .35rem .6rem; border: 1px solid #d0d0d0; background: #f7f7f7; border-radius: .5rem; cursor: pointer; }
+.toggles { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.toggles input { margin-right: .35rem; }
+
+.map { position: relative; width: 100%; max-width: var(--maxw); margin: 0; }
+.map .base { display: block; width: 100%; height: auto; }
+.layer { position: absolute; inset: 0; width: 100%; height: auto; display: none; pointer-events: none; }
+.layer.is-on { display: block; }
